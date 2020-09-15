@@ -2,15 +2,18 @@
     <head>
         <title>Library</title>
         <link rel="stylesheet" href="style.css">
-    </head>
+    </head><button id="libraryBook" type="button">Add to Library</button> <br>
     <body>
-        <p class="mainContent">Hi</p>
-        <form>
-            <input type="text" id="bookTitle"><label>Book Title</label><br>
+        <form id="formBook" style="display:none;">
+            <br>
+            <label>Book Title:</label><input type="text" id="bookTitle"><br>
+            <label>Book Author:</label><input type="text" id="bookAuthor"><br>
+            <label>Book Pages:</label><input type="text" id="bookPages"> <br> <br>
             <button id="addBook" type="button">Add Book</button>
-            <button id="removeBook" type="button">Remove Book</button>
         </form>
         <p class="booklist"></p>
+        <div id="mainCards">
+        </div>
         <script src="script.js"></script>
     </body>
 </html>

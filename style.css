@@ -1,3 +1,37 @@
 body {
     background-color: #c9c9c9;
 }
+
+.bookCard {
+    background-color: pink;
+    width: 200px;
+    margin: 20px;
+    height: 280px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainCards {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+   text-align: center;
+}
+
+.buttonDelete {
+    background-color: pink;
+    color: blue;
+    margin-top: 10px;
+}
+
+.readBook {
+    background-color: pink;
+    color: blue;
+    margin-top: 10px;
+}
+
+.icon{
+   padding-right: 200px;
+   height: 50px;
+   width: 50px;
+}
