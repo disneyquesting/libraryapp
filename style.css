@@ -1,33 +1,86 @@
 body {
     background-color: #c9c9c9;
+    background-image: url(./booksbackgroundimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#libraryBook {
+    width: 150px;
+    height: 50px;
+    background-color:#272727;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input {
+  display: inline-block;
+  width: 200px;
+}
+
+.container label {
+    color: white;
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    padding-right: 20px;
+    text-align: right;
 }
 
 .bookCard {
+    position: fixed;
     background-color: pink;
     width: 200px;
     margin: 20px;
     height: 280px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    -moz-box-shadow:    -10px 3px 5px 6px #000000;
+    -webkit-box-shadow: -10px 3px 5px 6px #000000;
+    box-shadow:         -10px 3px 5px 2px #000000;
+}
+
+.bookCard:hover{
+    background-color: #FFF5C0;
 }
 
 #mainCards {
-    display: flex;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
    text-align: center;
+   padding-left: 100px;
 }
 
 .buttonDelete {
     background-color: pink;
     color: blue;
     margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttonDelete:hover{
+    background-color: #FFD5C0;
 }
 
 .readBook {
     background-color: pink;
     color: blue;
     margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.readBook:hover {
+    background-color: #FFD5C0;
 }
 
 .icon{
